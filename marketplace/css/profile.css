@@ -2,12 +2,14 @@ body {
     font-family: Arial, sans-serif;
     padding: 0px;
     margin: 0px;
+    margin-top: 70px;
     background: #ccc5b9;
   }
   
   .profile-container {
     background: #fffcf2;
     padding: 20px;
+    margin-top: 30px;
     max-width: 1000px;
     margin: auto;
     border-radius: 10px;
