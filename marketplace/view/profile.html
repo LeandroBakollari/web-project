@@ -5,9 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Profile Page</title>
   <link rel="stylesheet" href="/marketplace/css/profile.css" />
+  <link rel="stylesheet" href="/marketplace/css/navbar.css" />
 </head>
 <body>
-
+  <nav class="navbar">
+    <div class="logo">M</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Marketplace</a></li>
+      <li><a href="#">Messages</a></li>
+      <li><a href="#">Profile</a></li>
+      <li><a href="#">Logout</a></li>
+    </ul>
+  </nav>
+  
     <div class="profile-container">
         <div class="profile-header">
             <img src="/marketplace/images/pfp.png" alt="Profile Picture" class="profile-image" />
@@ -85,9 +96,52 @@
     <div class="section hidden" id="listings">
       <h2>Listings</h2>
       <ul>
-        <li>Item 1 - $10</li>
-        <li>Item 2 - $25</li>
-        <li>Item 3 - $15</li>
+        <div class="listings">
+          <div class="listing-item">
+            <img src="/marketplace/images/item1.jpg" alt="Item 1" class="listing-image" />
+            <div class="listing-details">
+              <h3>Item 1</h3>
+              <p class="price">Price: $10</p>
+              <p class="status">Status: Available</p>
+            </div>
+          </div>
+        
+          <div class="listing-item">
+            <img src="/marketplace/images/item2.jpg" alt="Item 2" class="listing-image" />
+            <div class="listing-details">
+              <h3>Item 2</h3>
+              <p class="price">Price: $25</p>
+              <p class="status">Status: Sold</p>
+            </div>
+          </div>
+        
+          <div class="listing-item">
+            <img src="/marketplace/images/item3.jpg" alt="Item 3" class="listing-image" />
+            <div class="listing-details">
+              <h3>Item 3</h3>
+              <p class="price">Price: $15</p>
+              <p class="status">Status: Available</p>
+            </div>
+          </div>
+        
+        <div class="listing-item">
+            <img src="/marketplace/images/item4.jpg" alt="Item 4" class="listing-image" />
+            <div class="listing-details">
+              <h3>Item 4</h3>
+              <p class="price">Price: $30</p>
+              <p class="status">Status: Sold</p>
+            </div>
+          </div>
+        
+          <div class="listing-item">
+            <img src="/marketplace/images/item5.jpg" alt="Item 5" class="listing-image" />
+            <div class="listing-details">
+              <h3>Item 5</h3>
+              <p class="price">Price: $20</p>
+              <p class="status">Status: Available</p>
+            </div>
+          </div>
+        </div>
       </ul>
       <button id="add-listing">+ Add Listing</button>
     </div>

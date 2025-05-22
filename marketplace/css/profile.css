@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    padding: 20px;
+    padding: 0px;
+    margin: 0px;
     background: #ccc5b9;
   }
   
@@ -135,4 +136,66 @@ body {
 
 .profile-link:hover {
     color: #eb5e28;
+}
+
+.listings {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.listing-item {
+    background: #fffcf2;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.listing-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ccc;
+}
+
+.listing-details {
+    padding: 15px;
+    width: 100%;
+}
+
+.listing-details h3 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.listing-details .price {
+    font-size: 16px;
+    color: #4caf50;
+    margin: 5px 0;
+}
+
+.listing-details .status {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+}
+
+#add-listing {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #eb5e28;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#add-listing:hover {
+    background: #d04a1f;
 }
