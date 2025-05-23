@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fffcf2;
+    color: #252422;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 50px auto 0;
+    padding: 20px;
+    background-color: #ccc5b9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(64, 61, 57, 0.1);
+  }
+
+  h1 {
+    text-align: center;
+    color: #403d39;
+  }
+
+  .faq {
+    margin-top: 30px;
+  }
+
+  .faq h2 {
+    color: #eb5e28;
+    margin-bottom: 10px;
+  }
+
+  .faq p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    color: #403d39;
+  }

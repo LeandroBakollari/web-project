@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Add New Listing</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fffcf2;
+      color: #252422;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: #ccc5b9;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(64, 61, 57, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #403d39;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input, select {
+      padding: 10px;
+      border: 1px solid #403d39;
+      border-radius: 5px;
+      margin-top: 5px;
+      background-color: #fffcf2;
+    }
+
+    button {
+      margin-top: 25px;
+      padding: 12px;
+      background-color: #eb5e28;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #d14d1f;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #403d39;
+    }
+    .back-button {
+position: absolute;
+top: 20px;
+left: 20px;
+color: #eb5e28;
+text-decoration: none;
+font-size: 1rem;
+font-weight: bold;
+background: none;
+border: none;
+cursor: pointer;
+}
+  </style>
+</head>
+<body>
+    <a href="/marketplace/view/index.html" class="back-button">← Home</a>
+
+  <div class="container">
+    <h1>Add New Listing</h1>
+    <form action="/marketplace/add_listing" method="post">
+      <label for="name">Product Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="price">Price ($)</label>
+      <input type="number" id="price" name="price" step="0.01" required />
+
+      <label for="category">Category</label>
+      <select id="category" name="category" required>
+        <option value="">-- Select Category --</option>
+        <option value="brand-new">Brand New</option>
+        <option value="women">Women</option>
+        <option value="men">Men</option>
+        <option value="kids">Kids</option>
+        <option value="sneakers">Shoes and Sneakers</option>
+        <option value="electronics">Electronics</option>
+        <option value="clothes">Clothes</option>
+        <option value="accessories">Accessories</option>
+      </select>
+
+      <label for="style">Style</label>
+      <input type="text" id="style" name="style" />
+
+      <label for="colorway">Colorway</label>
+      <input type="text" id="colorway" name="colorway" />
+
+      <button type="submit">Submit Listing</button>
+    </form>
+  </div>
+
+  <footer>
+    &copy; QuickFlip
+  </footer>
+
+</body>
+</html>
