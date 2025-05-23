@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Retailer Account</title>
+    <link rel="stylesheet" href="/marketplace/css/createAcc.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+    <a href="/marketplace/view/index.html"><img src="/marketplace/assets/output-onlinepngtools (1).png" alt="QuickFlip" style="height: 40px;"></a></div>
+    <ul class="nav-links">
+        <li><a href="/marketplace/view/index.html">Home</a></li>
+        <li><a href="/marketplace/view/browser.html">Marketplace</a></li>
+        <li><a href="#">Help</a></li>
+        <li><a href="/marketplace/view/profile.html">Profile</a></li>
+        <li><a href="#">Logout</a></li>
+</a>
+    </ul>
+  </nav>
+
+  <div class="home-container">
+    <h1 class="home-title">Create an Account</h1>
+    <form id="createAccForm">
+      <input type="text" placeholder="Name" required />
+      <input type="text" placeholder="Surname" required />
+      <input type="email" placeholder="Email" required />
+      
+      <input type="password" id="password" placeholder="Password" required />
+      <div class="toggle-password">
+        <input type="checkbox" id="togglePass" />
+        <label for="togglePass">Show Password</label>
+      </div>
+      <div id="errorMessage" class="error"></div>
+      <button type="submit">Create Account</button>
+    </form>
+  </div>
+<script src="createAcc.js"></script>
+</body>
+</html>
