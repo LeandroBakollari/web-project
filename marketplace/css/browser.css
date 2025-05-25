@@ -173,3 +173,8 @@ cursor: pointer;
 .back-button:hover {
 text-decoration: underline;
 }
+#category-list a.active {
+  font-weight: bold;
+  color: #ff007f;
+  text-decoration: underline;
+}

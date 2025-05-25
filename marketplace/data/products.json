@@ -1,0 +1,84 @@
+[
+    {
+      "id": 1,
+      "name": "Nike Dunk Low Panda",
+      "price": 100,
+      "description": "Brand New",
+      "status": "available",
+      "ownerId": 101,
+      "image": "/marketplace/img/kpuc1.png"
+    },
+    {
+      "id": 2,
+      "name": "Air Jordan 1 Chicago",
+      "price": 120,
+      "description": "Brand New",
+      "status": "available",
+      "ownerId": 102,
+      "image": "/marketplace/img/kpuc2.png"
+    },
+    {
+      "id": 3,
+      "name": "Yeezy Boost 350 V2",
+      "price": 150,
+      "description": "Brand New",
+      "status": "available",
+      "ownerId": 103,
+      "image": "/marketplace/img/kpuc3.png"
+    },
+    {
+      "id": 4,
+      "name": "Silver Chain",
+      "price": 20,
+      "description": "Accessories",
+      "status": "available",
+      "ownerId": 104,
+      "image": "/marketplace/img/acc1.png"
+    },
+    {
+      "id": 5,
+      "name": "Leather Bracelet",
+      "price": 15,
+      "description": "Accessories",
+      "status": "available",
+      "ownerId": 105,
+      "image": "/marketplace/img/acc2.png"
+    },
+    {
+      "id": 6,
+      "name": "Stylish Watch",
+      "price": 30,
+      "description": "Accessories",
+      "status": "available",
+      "ownerId": 106,
+      "image": "/marketplace/img/acc3.png"
+    },
+    {
+      "id": 7,
+      "name": "Wireless Headphones",
+      "price": 60,
+      "description": "Electronics",
+      "status": "available",
+      "ownerId": 107,
+      "image": "/marketplace/img/elec1.png"
+    },
+    {
+      "id": 8,
+      "name": "Denim Jacket",
+      "price": 50,
+      "description": "Men",
+      "status": "available",
+      "ownerId": 108,
+      "image": "/marketplace/img/man1.png"
+    },
+    {
+      "id": 9,
+      "name": "Cute Hoodie",
+      "price": 23,
+      "description": "Kids",
+      "status": "available",
+      "ownerId": 109,
+      "image": "/marketplace/img/kid1.png"
+    }
+  ]
+  

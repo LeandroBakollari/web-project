@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Product Details - QuickFlip</title>
+  <link rel="stylesheet" href="/marketplace/css/browser.css" />
+  <style>
+    .product-detail {
+      max-width: 600px;
+      margin: auto;
+      padding: 2rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .product-detail img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 8px;
+    }
+    .buy-btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .buy-btn:disabled {
+      background: gray;
+      cursor: not-allowed;
+    }
+    .not-available {
+      margin-top: 20px;
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="product-detail" id="detail-container">
+    <!-- JS will populate this -->
+  </div>
+
+  <script>
+    const product = JSON.parse(localStorage.getItem("quickflip_selected_product"));
+    const container = document.getElementById("detail-container");
+
+    if (!product) {
+      container.innerHTML = "<p>Product not found.</p>";
+    } else {
+      const isAvailable = product.available !== false;
+
+      container.innerHTML = `
+        <h2>${product.name}</h2>
+        <img src="${product.image}" alt="${product.name}">
+        <p>${product.description}</p>
+        <p><strong>$${product.price}</strong></p>
+        ${isAvailable ? '<button class="buy-btn" id="buyBtn">Buy Now</button>' : '<p class="not-available">Not Available</p>'}
+      `;
+
+      if (isAvailable) {
+        document.getElementById("buyBtn").addEventListener("click", () => {
+          product.available = false;
+
+          // Update product in localStorage
+          let products = JSON.parse(localStorage.getItem("quickflip_products")) || [];
+          const index = products.findIndex(p => p.name === product.name && p.price === product.price);
+          if (index !== -1) {
+            products[index].available = false;
+            localStorage.setItem("quickflip_products", JSON.stringify(products));
+          }
+
+          // Update selected product too
+          localStorage.setItem("quickflip_selected_product", JSON.stringify(product));
+
+          alert("Purchase successful! This product is now unavailable.");
+          location.reload();
+        });
+      }
+    }
+  </script>
+</body>
+</html>
