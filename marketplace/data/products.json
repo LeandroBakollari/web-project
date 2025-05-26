@@ -3,7 +3,7 @@
       "id": 1,
       "name": "Nike Dunk Low Panda",
       "price": 100,
-      "description": "Brand New",
+      "description": "Shoes and sneakers",
       "status": "available",
       "ownerId": 101,
       "image": "/marketplace/img/kpuc1.png"
@@ -12,7 +12,7 @@
       "id": 2,
       "name": "Air Jordan 1 Chicago",
       "price": 120,
-      "description": "Brand New",
+      "description": "Shoes and sneakers",
       "status": "available",
       "ownerId": 102,
       "image": "/marketplace/img/kpuc2.png"
@@ -21,14 +21,14 @@
       "id": 3,
       "name": "Yeezy Boost 350 V2",
       "price": 150,
-      "description": "Brand New",
+      "description": "Shoes and sneakers",
       "status": "available",
       "ownerId": 103,
       "image": "/marketplace/img/kpuc3.png"
     },
     {
       "id": 4,
-      "name": "Silver Chain",
+      "name": "Silver Ring",
       "price": 20,
       "description": "Accessories",
       "status": "available",
@@ -37,7 +37,7 @@
     },
     {
       "id": 5,
-      "name": "Leather Bracelet",
+      "name": "Golden Ring",
       "price": 15,
       "description": "Accessories",
       "status": "available",
@@ -46,7 +46,7 @@
     },
     {
       "id": 6,
-      "name": "Stylish Watch",
+      "name": "Double Ring",
       "price": 30,
       "description": "Accessories",
       "status": "available",
@@ -55,12 +55,48 @@
     },
     {
       "id": 7,
-      "name": "Wireless Headphones",
+      "name": "Nintendo Switch",
       "price": 60,
       "description": "Electronics",
       "status": "available",
       "ownerId": 107,
       "image": "/marketplace/img/elec1.png"
+    },
+    {
+    "id": 7,
+    "name": "Gaming Mouse",
+    "price": 45,
+    "description": "Electronics",
+    "status": "available",
+    "ownerId": 107,
+    "image": "/marketplace/img/elec2.png"
+    },
+    {
+      "id": 7,
+      "name": "Gaming Keyboard",
+      "price": 40,
+      "description": "Electronics",
+      "status": "available",
+      "ownerId": 107,
+      "image": "/marketplace/img/elec3.png"
+    },
+    {
+      "id": 7,
+      "name": "Gaming Keyboard red",
+      "price": 70,
+      "description": "Electronics",
+      "status": "available",
+      "ownerId": 107,
+      "image": "/marketplace/img/elec4.webp"
+    },
+    {
+      "id": 7,
+      "name": "Gaming Keyboard blue",
+      "price": 30,
+      "description": "Electronics",
+      "status": "available",
+      "ownerId": 107,
+      "image": "/marketplace/img/elec5.webp"
     },
     {
       "id": 8,
@@ -73,12 +109,58 @@
     },
     {
       "id": 9,
-      "name": "Cute Hoodie",
+      "name": "Cute dress",
       "price": 23,
       "description": "Kids",
       "status": "available",
       "ownerId": 109,
       "image": "/marketplace/img/kid1.png"
+    },
+    
+    {
+      "id": 10,
+      "name": "Blue fit",
+      "price": 23,
+      "description": "Kids",
+      "status": "available",
+      "ownerId": 109,
+      "image": "/marketplace/img/kid2.png"
+    },
+    {
+      "id": 11,
+      "name": "Blue Sweater",
+      "price": 23,
+      "description": "Kids",
+      "status": "available",
+      "ownerId": 109,
+      "image": "/marketplace/img/kid3.png"
+    },
+    {
+      "id": 11,
+      "name": "Blue Shirt",
+      "price": 23,
+      "description": "Women",
+      "status": "available",
+      "ownerId": 109,
+      "image": "/marketplace/img/woman1.png"
+    },
+    {
+      "id": 11,
+      "name": "Brown Shirt",
+      "price": 27,
+      "description": "Women",
+      "status": "available",
+      "ownerId": 109,
+      "image": "/marketplace/img/woman2.png"
+    },
+    {
+      "id": 11,
+      "name": "Black Shirt",
+      "price": 16,
+      "description": "Women",
+      "status": "available",
+      "ownerId": 109,
+      "image": "/marketplace/img/woman3.png"
     }
   ]
   
