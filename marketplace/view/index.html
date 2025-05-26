@@ -5,10 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Marketplace Home</title>
   <link rel="stylesheet" href="/marketplace/css/style.css" />
+  <link rel="stylesheet" href="/marketplace/css/navbar.css" />
 </head>
 <body>
+
+  <!-- Background video -->
+  <video autoplay muted loop id="bg-video">
+    <source src="/marketplace/img/bgm.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Overlay for readability -->
+  <div class="overlay"></div>
+
   <nav class="navbar">
-    <div class="logo"><img src="/marketplace/assets/output-onlinepngtools (1).png" alt="QuickFlip" style="height: 40px;"></div>
+    <div class="logo">
+      <img src="/marketplace/assets/output-onlinepngtools (1).png" alt="QuickFlip" style="height: 40px;">
+    </div>
     <ul class="nav-links">
       <li><a href="/marketplace/view/index.html">Home</a></li>
       <li><a href="/marketplace/view/browser.html">Marketplace</a></li>
@@ -19,31 +32,32 @@
   </nav>
 
   <div class="home-container">
-    <h1 class="home-title"><img src="/marketplace/assets/output-onlinepngtools (1).png" alt="QuickFlip Logo"  style="height: 70px;" ></h1>
+    <h1 class="home-title fade-in">
+      <img src="/marketplace/assets/output-onlinepngtools (1).png" alt="QuickFlip Logo" style="height: 70px;" >
+    </h1>
     
-    <p class="home-description">
-      Welcome to <strong>QuickFlip</strong> — the fastest way to buy, sell, and trade all your favorite items. Whether you're flipping sneakers, listing rare collectibles, or browsing cool gear, we've built the cleanest and quickest marketplace experience just for you. 
-      Post your listings, connect with buyers, and make deals effortlessly.
+    <p class="home-description fade-in delay-1">
+      Welcome to <strong>QuickFlip</strong> — your ultimate launchpad to buying, selling, and trading fire items. From exclusive drops to vintage treasures, QuickFlip is the arena where hustlers, collectors, and treasure hunters collide. List your goods, make connections, and let the flips begin.
     </p>
     
-    <div class="main-boxes">
+    <div class="main-boxes fade-in delay-2">
       <a href="/marketplace/view/newP.html" class="main-box">
-        Sell
+        Sell Something
       </a>
       
       <a href="/marketplace/view/browser.html" class="main-box">
-        Explore
+        Explore Listings
       </a>
 
       <a href="/marketplace/view/help.html" class="main-box">
-        Help
+        Need Help?
       </a>
     </div>
   </div>
 
-  <div class="footer-section">
+  <div class="footer-section fade-in delay-3">
     <div class="footer-content">
-      <a  href="https://paypal.me/gjuliojuli" class ="footer-box">
+      <a href="https://paypal.me/gjuliojuli" class="footer-box">
         Contact Us
       </a>
 

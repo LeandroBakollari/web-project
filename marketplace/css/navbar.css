@@ -1,60 +1,52 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.navbar {
+  background-color: rgba(64, 61, 57, 0.4); /* Less opaque */
+  color: #fffcf2;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 10px 30px;
+  backdrop-filter: blur(10px); /* Frosted glass */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.3s ease;
 }
 
-html, body {
-  overflow-x: hidden;
-  width: 100%;
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #eb5e28;
 }
-.navbar {
-    background-color: #403d39;
-    color: #fffcf2;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    padding: 10px 30px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #eb5e28;
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .nav-links li {
-    margin: 0;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: #ccc5b9;
-    font-weight: bold;
-    padding: 8px 12px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  .nav-links a:hover {
-    background-color: #eb5e28;
-    color: #fffcf2;
-  }
-  
-  .nav-links a:active {
-    color: #fffcf2;
-  }
-  
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ccc5b9;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-links a:hover {
+  background-color: rgba(235, 94, 40, 0.7); /* semi-transparent hover */
+  color: #fffcf2;
+  transform: translateY(-2px);
+}
+
+.nav-links a:active {
+  color: #fffcf2;
+}
