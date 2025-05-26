@@ -1,17 +1,50 @@
-body {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* BODY WITH BLURRED BACKGROUND IMAGE */
+  body {
     font-family: Arial, sans-serif;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     margin-top: 70px;
-    background: #ccc5b9;
+    background: none;
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  /* ADD BLUR IMAGE BACKGROUND */
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('your-background.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+    z-index: -1;
+    opacity: 0.6;
+  }
+  
+  /* MAIN WRAPPER TO KEEP STUFF CENTERED */
+  .main-container {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
   }
   
   .profile-container {
     background: #fffcf2;
     padding: 20px;
     margin-top: 50px;
-    max-width: 1000px;
-    margin: auto;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
@@ -35,6 +68,12 @@ body {
     transition: background 0.3s;
   }
   
+  .tabs button.active {
+    background: #eb5e28;
+    color: white;
+    font-weight: bold;
+  }
+  
   .tabs button:hover {
     background: #eb5e28;
   }
@@ -47,106 +86,106 @@ body {
     display: none;
   }
   
-.feedback-item {
+  .feedback-item {
     background: #f9f9f9;
     padding: 15px;
     margin-bottom: 15px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.feedback-header {
+  }
+  
+  .feedback-header {
     font-size: 14px;
     color: #252422;
     margin-bottom: 8px;
-}
-
-.feedback-header strong {
+  }
+  
+  .feedback-header strong {
     color: #252422;
-}
-
-.feedback-time {
+  }
+  
+  .feedback-time {
     font-size: 12px;
     color: #999;
-}
-
-.feedback-content {
+  }
+  
+  .feedback-content {
     display: flex;
     align-items: center;
     font-size: 14px;
     color: #252422;
-}
-
-.feedback-symbol {
+  }
+  
+  .feedback-symbol {
     margin-right: 10px;
     font-size: 16px;
-}
-
-.feedback-symbol.positive {
+  }
+  
+  .feedback-symbol.positive {
     color: #4caf50;
-}
-
-.feedback-symbol.negative {
+  }
+  
+  .feedback-symbol.negative {
     color: #f44336;
-}
-
-.profile-header {
+  }
+  
+  .profile-header {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-}
-
-.profile-image {
+  }
+  
+  .profile-image {
     width: 100px;
     height: 100px;
     border-radius: 50%;
     margin-right: 20px;
     object-fit: cover;
-}
-
-.profile-info {
+  }
+  
+  .profile-info {
     flex: 1;
-}
-
-.profile-info h1 {
+  }
+  
+  .profile-info h1 {
     font-size: 24px;
     margin: 0;
     color: #333;
-}
-
-.profile-info .stats {
+  }
+  
+  .profile-info .stats {
     margin-top: 10px;
     font-size: 14px;
     color: #555;
     display: flex;
     gap: 15px;
-}
-
-.profile-links {
+  }
+  
+  .profile-links {
     margin-top: 10px;
     display: flex;
     justify-content: flex-end;
     gap: 10px;
-}
-
-.profile-link {
+  }
+  
+  .profile-link {
     text-decoration: none;
     color: #403d39;
     font-size: 14px;
     transition: color 0.3s;
-}
-
-.profile-link:hover {
+  }
+  
+  .profile-link:hover {
     color: #eb5e28;
-}
-
-.listings {
+  }
+  
+  .listings {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-}
-
-.listing-item {
+  }
+  
+  .listing-item {
     background: #fffcf2;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -155,39 +194,39 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-}
-
-.listing-image {
+  }
+  
+  .listing-image {
     width: 100%;
     height: 200px;
     object-fit: cover;
     border-bottom: 1px solid #ccc;
-}
-
-.listing-details {
+  }
+  
+  .listing-details {
     padding: 15px;
     width: 100%;
-}
-
-.listing-details h3 {
+  }
+  
+  .listing-details h3 {
     font-size: 18px;
     margin: 10px 0 5px;
     color: #333;
-}
-
-.listing-details .price {
+  }
+  
+  .listing-details .price {
     font-size: 16px;
     color: #4caf50;
     margin: 5px 0;
-}
-
-.listing-details .status {
+  }
+  
+  .listing-details .status {
     font-size: 14px;
     color: #555;
     margin: 5px 0;
-}
-
-#add-listing {
+  }
+  
+  #add-listing {
     margin-top: 20px;
     padding: 10px 20px;
     background: #eb5e28;
@@ -196,8 +235,9 @@ body {
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s;
-}
-
-#add-listing:hover {
+  }
+  
+  #add-listing:hover {
     background: #d04a1f;
-}
+  }
+  
